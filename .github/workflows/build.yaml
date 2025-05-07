@@ -12,6 +12,9 @@ on:
         description: "Inner parameter for Allure TestOps"
         required: false
 
+env:
+  ALLURE_JOB_RUN_ID: ${{ github.event.inputs.ALLURE_JOB_RUN_ID }}
+
 jobs:
   build:
     runs-on: ubuntu-latest
